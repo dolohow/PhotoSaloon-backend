@@ -4,6 +4,10 @@ import (
 	"net/http"
 )
 
+type sampleData struct {
+	Data string `json:"data"`
+}
+
 // Middleware type is an adapter to allow the use of ordinary functions as
 // handlers.
 type Middleware func(http.Handler) http.Handler
